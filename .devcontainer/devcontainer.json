@@ -1,0 +1,9 @@
+{
+    "name": "Remote-react",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "react",
+    "workspaceFolder": "/opt/working",
+    "remoteUser": "user",
+}

@@ -1,0 +1,15 @@
+version: '3'
+services:
+   react:
+     build:
+       context: .
+       args:
+         UID: $UID
+         GID: $GID
+     container_name: 'react'
+     working_dir: '/opt/working'
+     tty: true
+     volumes:
+        - ./working:/opt/working
+     ports:
+        - 3000:3000
